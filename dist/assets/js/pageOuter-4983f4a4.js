@@ -1,0 +1,1 @@
+import{_ as e,o as c,c as r}from"./index-b15b1a04.js";const t={};function a(n,o){return c(),r("div",null," PageOuter ( \u70B9\u51FB\u9762\u5305\u5C51\u548CTab \u8DEF\u7531\u53C2\u6570\u4E0D\u4F1A\u4E22\u5931 - \u6D4B\u8BD5\u9875\u9762 ) ")}const _=e(t,[["render",a]]);export{_ as default};
