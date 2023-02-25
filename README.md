@@ -4,6 +4,9 @@
 
 `v-admin` 是一款开源免费的中后台管理系统模版, 使用最新的 `Vue3`、`Vite`、`ant-design-vue`、`Pinia` 等主流技术开发
 
+#### 在线预览地址
+[点我预览](https://zhangzy56.github.io/V-Admin/dist)
+
 #### 登录相关
 
 - 开发中...

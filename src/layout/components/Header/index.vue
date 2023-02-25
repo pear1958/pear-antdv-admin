@@ -11,7 +11,7 @@
       <Fullscreen />
       <a-dropdown :trigger="['click']">
         <div class="user">
-          <a-avatar :size="26" src="/src/assets/imgs/avatar.jpg"></a-avatar>
+          <a-avatar :size="26" :src="avatar"></a-avatar>
           <span class="name">Admin</span>
         </div>
         <template #overlay>
@@ -42,6 +42,7 @@ import Fullscreen from './components/Fullscreen.vue'
 import emitter from '@/utils/mitt'
 import { useUserStore } from '@/store/modules/user'
 import { usePermissionStore } from '@/store/modules/permission'
+import avatar from '@/assets/imgs/avatar.jpg'
 
 const openSetDrawer = () => {
   emitter.emit('openSetDrawer')
