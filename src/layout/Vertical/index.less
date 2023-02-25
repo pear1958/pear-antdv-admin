@@ -1,0 +1,56 @@
+// 修改子菜单的背景色
+:deep(.ant-menu-dark .ant-menu-inline.ant-menu-sub) {
+  background-color: #0c2135;
+}
+
+.app {
+  // 修复刷新Main时, 显示横向滚动条的Bug
+  overflow: hidden;
+
+  .sider {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    .logo {
+      height: @headerHeight;
+      border-bottom: 1px solid #282a35;
+      overflow: hidden;
+
+      span {
+        margin-left: 6px;
+        font-size: 21.5px;
+        font-weight: bold;
+        color: #dadada;
+      }
+    }
+
+    .menu {
+      height: calc(100vh - @headerHeight);
+      overflow: auto;
+    }
+  }
+
+  .layout-box {
+    transition: all 0.2s;
+
+    .header {
+      background-color: #ffffff;
+      height: @headerHeight;
+      line-height: @headerHeight;
+      padding: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 700;
+      transition: all 0.2s;
+    }
+
+    .content {
+      min-height: calc(100vh - @headerHeight - @tabHeight);
+      margin-top: @headerHeight + @tabHeight;
+    }
+  }
+}
