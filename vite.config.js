@@ -57,7 +57,7 @@ export default defineConfig({
   // 解决 Vite 启动完之后首页加载慢的问题
   optimizeDeps: {
     // 启动时 预加载这些包
-    include: ['pinia', 'ant-design-vue/es/locale/zh_CN', 'dayjs']
+    include: ['pinia', 'ant-design-vue/es/locale/zh_CN', 'dayjs', 'mitt', 'echarts']
   },
   build: {
     sourcemap: false,

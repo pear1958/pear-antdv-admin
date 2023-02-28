@@ -17,6 +17,7 @@
     "ant-design-vue": "^3.2.15",
     "axios": "^1.2.1",
     "dayjs": "^1.11.7",
+    "echarts": "^5.4.1",
     "hotkeys-js": "^3.10.1",
     "mitt": "^3.0.0",
     "nprogress": "^0.2.0",
