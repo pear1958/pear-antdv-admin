@@ -116,6 +116,42 @@ export const basicRouter = [
     ]
   },
   {
+    path: '/able',
+    name: 'Able',
+    redirect: '/able/file',
+    meta: {
+      title: '功能',
+      icon: 'AccountBookOutlined',
+      rank: 21
+    },
+    children: [
+      {
+        path: '/able/file',
+        name: 'File',
+        component: '/able/file/index',
+        meta: {
+          title: '文件'
+        }
+      },
+      {
+        path: '/able/table',
+        name: 'Table',
+        component: '/able/table/index',
+        meta: {
+          title: '表格'
+        }
+      },
+      {
+        path: '/able/map',
+        name: 'Map',
+        component: '/able/map/index',
+        meta: {
+          title: '地图'
+        }
+      },
+    ]
+  },
+  {
     path: '/test',
     name: 'CeShi',
     redirect: '/menu/menuTest0',
@@ -134,5 +170,5 @@ export const basicRouter = [
         }
       }
     })
-  },
+  }
 ]
