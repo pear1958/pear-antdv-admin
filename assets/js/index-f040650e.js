@@ -1,0 +1,1 @@
+import{s as t,o as s,e as n,t as o,u as a}from"./index-b64ddc8d.js";const m={__name:"index",setup(r){const e=t().path.replace("/menu/menuTest","");return(c,p)=>(s(),n("div",null,o("menuTest"+a(e)),1))}};export{m as default};

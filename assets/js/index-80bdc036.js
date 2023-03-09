@@ -1,0 +1,1 @@
+import{_ as s,o as _,e as o,p as t,h as c,g as d}from"./index-b64ddc8d.js";const n={},a=e=>(t("data-v-bde9f07b"),e=e(),c(),e),p={class:"Menu21"},i=a(()=>d("div",null,"Menu21",-1)),r=[i];function f(e,l){return _(),o("div",p,r)}const h=s(n,[["render",f],["__scopeId","data-v-bde9f07b"]]);export{h as default};
