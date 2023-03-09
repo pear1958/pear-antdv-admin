@@ -5,6 +5,7 @@ import { resolve } from 'path'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import Less2CssVariablePlugin from 'antd-less-to-css-variable'
 import svgLoader from 'vite-svg-loader'
+// import viteCompression from 'vite-plugin-compression'
 
 // https://vitejs.dev/config/
 
@@ -52,7 +53,14 @@ export default defineConfig({
       symbolId: 'icon-[dir]-[name]'
     }),
     // 加载SVG文件作为Vue组件
-    svgLoader()
+    svgLoader(),
+    // 优化 首屏加载慢 等用户体验, 配置 Nginx 即可
+    // viteCompression({
+    //   deleteOriginFile: false, // 压缩后是否删除源文件
+    //   threshold: 10240, // 体积大于 threshold 才会被压缩, 单位b  10kb
+    //   algorithm: 'gzip', // 压缩算法
+    //   ext: '.gz' // 生成的压缩后缀
+    // })
   ],
   // 解决 Vite 启动完之后首页加载慢的问题
   optimizeDeps: {

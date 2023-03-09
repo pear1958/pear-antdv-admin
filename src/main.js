@@ -13,6 +13,8 @@ import '@/style/index.less'
 // https://github.com/vbenjs/vite-plugin-svg-icons/blob/main/README.zh_CN.md
 import 'virtual:svg-icons-register'
 
+import { getSystemConfig } from '@/config'
+
 import { setupDirectives } from '@/directives'
 import { registerGlobComp } from '@/components'
 
@@ -37,4 +39,7 @@ setupDirectives(app)
 // 注册全局组件
 registerGlobComp(app)
 
-app.use(store).use(router).use(Antd).mount('#app')
+getSystemConfig(app).then(config => {
+  app.use(router).use(store).use(Antd)
+  app.mount('#app')
+})

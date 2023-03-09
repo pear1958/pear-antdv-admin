@@ -77,7 +77,6 @@ pnpm run build:pro
 - [x] 通用文件下载
 - [x] Echarts组件
 - [ ] 迁移websocket
-- [ ] vite.config.js优化
 - [ ] husky and Lint 等代码规范
 - [ ] 锁屏功能
 - [ ] 移动端兼容
