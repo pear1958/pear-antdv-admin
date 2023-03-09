@@ -74,6 +74,8 @@ pnpm run build:pro
 - [x] 面包屑 & Tab 支持 路由query参数
 - [x] 按钮权限指令封装
 - [x] 完善异常页
+- [x] 通用文件下载
+- [x] Echarts组件
 - [ ] 迁移websocket
 - [ ] vite.config.js优化
 - [ ] husky and Lint 等代码规范
@@ -83,5 +85,4 @@ pnpm run build:pro
 - [ ] drag Modal And SearchTable
 - [ ] 优化登录页
 - [ ] 优化Tab组件
-- [ ] Echarts组件
 

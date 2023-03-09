@@ -1,31 +1,22 @@
 <template>
   <div>
-    <a-space>
-      <a-button>Default Button</a-button>
-      <a-button type="dashed">Dashed Button</a-button>
-      <a-button type="text">Text Button</a-button>
-      <a-button type="link">Link Button</a-button>
-    </a-space>
-
-    <!-- <Loading /> -->
-
-    <a-date-picker v-model:value="value1" placeholder="请选择时间"/>
-
-    <div class="home">
-      <div v-for="item in 70">Home</div>
+    <div class="chart">
+      <charts :option="option" />
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import Loading from '@/components/Loading/index.vue'
+import { reactive } from 'vue'
+import charts from '@/components/Charts/index.vue'
+import { options } from './config'
 
-const value1 = ref()
+const option = reactive(options)
 </script>
 
 <style lang="less" scoped>
-.home {
-  margin-top: 20px;
+.chart {
+  width: 800px;
+  height: 400px;
 }
 </style>
