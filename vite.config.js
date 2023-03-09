@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd())
 
   // 获取当前运行模式的环境变量对象, Val 是字符串, 因此需要处理一下
-  // 直接使用 import.meta.env 来获取环境变量的话, 可以在Vue文件中获取, 但是无法在此文件中获取
+  // 直接使用 import.meta.env 来获取环境变量的话, 可以在Vue文件中获取(也有数据类型的问题), 但是无法在此文件中获取
   const envConf = formatEnv(env)
 
   // console.log('envConf', envConf)
