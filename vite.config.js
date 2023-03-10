@@ -17,8 +17,6 @@ export default defineConfig(({ mode }) => {
   // 直接使用 import.meta.env 来获取环境变量的话, 可以在Vue文件中获取(也有数据类型的问题), 但是无法在此文件中获取
   const envConf = formatEnv(env)
 
-  // console.log('envConf', envConf)
-
   // 返回配置
   return {
     base: './',
@@ -79,7 +77,8 @@ export default defineConfig(({ mode }) => {
       include: ['pinia', 'ant-design-vue/es/locale/zh_CN', 'dayjs', 'mitt', 'echarts']
     },
     build: {
-      sourcemap: false,
+      // 关闭source-map 减小打包后的文件体积
+      sourcemap: true,
       // 消除打包大小超过500kb警告
       chunkSizeWarningLimit: 4000,
       // esbuild 打包更快, 但是不能去除 console.log
