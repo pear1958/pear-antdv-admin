@@ -115,16 +115,13 @@ function handleLogin(loginForm) {
   height: 100vh;
   background: url(/src/assets/imgs/login-bg-5.png) no-repeat;
   background-size: 100% 100%;
+  .flex();
 
   .login-form {
     width: 400px;
     background-color: #ffffff;
     box-shadow: 0px 6px 8px rgba(39, 106, 188, 0.05);
     border-radius: 8px;
-    position: fixed;
-    right: 100px;
-    top: 50%;
-    transform: translateY(-50%);
     padding: 24px;
 
     .title {

@@ -29,8 +29,8 @@ export default defineConfig(({ mode }) => {
     },
     server: {
       open: true, // 自动开启窗口
+      host: true, // 监听本地所有IP
       port: envConf.VITE_PORT,
-      host: '0.0.0.0',
       proxy: {
         // easy-mock 官网 https://mock.mengxuegu.com   github地址: https://github.com/easy-mock/easy-mock
         '/api': {
