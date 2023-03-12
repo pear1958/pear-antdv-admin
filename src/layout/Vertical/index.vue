@@ -15,16 +15,18 @@
       </div>
 
       <div class="menu">
-        <!-- 菜单 -->
-        <a-menu
-          v-model:selectedKeys="state.selectedKeys"
-          :open-keys="state.openKeys"
-          theme="dark"
-          mode="inline"
-          @click="handleClick"
-        >
-          <SubMenu :menuList="menuData" />
-        </a-menu>
+        <ScrollContainer>
+          <!-- 菜单 -->
+          <a-menu
+            v-model:selectedKeys="state.selectedKeys"
+            :open-keys="state.openKeys"
+            theme="dark"
+            mode="inline"
+            @click="handleClick"
+          >
+            <SubMenu :menuList="menuData" />
+          </a-menu>
+        </ScrollContainer>
       </div>
     </a-layout-sider>
 
@@ -48,6 +50,7 @@ import { useRouter, useRoute } from 'vue-router'
 import { useSystemStore } from '@/store/modules/system'
 import { filterMenuData } from '@/router/utils'
 import { usePermissionStore } from '@/store/modules/permission'
+import ScrollContainer from '@/components/ScrollContainer/index.vue'
 import SubMenu from '../components/SubMenu/index.vue'
 import Header from '../components/Header/index.vue'
 import Main from '../components/Main/index.vue'

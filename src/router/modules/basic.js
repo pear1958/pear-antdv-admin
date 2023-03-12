@@ -149,6 +149,14 @@ export const basicRouter = [
           title: '地图'
         }
       },
+      {
+        path: '/able/scroll',
+        name: 'Scroll',
+        component: '/able/scroll/index',
+        meta: {
+          title: '滚动'
+        }
+      },
     ]
   },
   {
