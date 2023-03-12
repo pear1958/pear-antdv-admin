@@ -76,13 +76,10 @@ pnpm run build:pro
 - [x] 完善异常页
 - [x] 通用文件下载
 - [x] Echarts组件
-- [ ] 迁移websocket
+- [x] 迁移websocket
 - [ ] husky and Lint 等代码规范
-- [ ] 锁屏功能
-- [ ] 移动端兼容
 - [ ] 大屏和gis Demo
 - [ ] drag Modal And SearchTable
-- [ ] 优化登录页
 - [ ] 优化Tab组件
 
 #### 支持
