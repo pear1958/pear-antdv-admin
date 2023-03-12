@@ -1,0 +1,2 @@
+import{_ as o,r,o as u,e as s,b as t,a,w as n}from"./index-18b1401e.js";const _={};function c(l,d){const e=r("a-button");return u(),s("div",null,[t(" \u83DC\u5355\u7BA1\u7406 "),a(e,{type:"primary"},{default:n(()=>[t("Primary Button")]),_:1}),a(e,null,{default:n(()=>[t("Default Button")]),_:1}),a(e,{type:"dashed"},{default:n(()=>[t("Dashed Button")]),_:1}),a(e,{type:"text"},{default:n(()=>[t("Text Button")]),_:1}),a(e,{type:"link"},{default:n(()=>[t("Link Button")]),_:1})])}const p=o(_,[["render",c]]);export{p as default};
+//# sourceMappingURL=index-d59ddfb2.js.map

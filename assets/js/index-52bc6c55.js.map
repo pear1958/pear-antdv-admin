@@ -1,0 +1,1 @@
+{"version":3,"file":"index-52bc6c55.js","sources":["../../../src/views/systemManage/role/index.vue"],"sourcesContent":["<template>\r\n  <div>\r\n    <div>角色管理</div>\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\n</script>\r\n\r\n<style lang='less' scoped>\r\n\r\n</style>\r\n"],"names":["_hoisted_2","_cache"],"mappings":"iHAEmBA,EAAA,iBACXC,EAAA"}
