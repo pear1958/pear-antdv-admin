@@ -1,0 +1,1 @@
+{"version":3,"file":"index-b62705a0.js","sources":["../../../src/views/menu/menu3/index.vue"],"sourcesContent":["<template>\n  <div>Menu3</div>\n</template>\n\n<script setup></script>\n\n<style lang=\"less\" scoped></style>\n"],"names":["_sfc_render","_ctx","_cache"],"mappings":"iEACE,SAAAA,EAAAC,EAAAC,EAAA"}

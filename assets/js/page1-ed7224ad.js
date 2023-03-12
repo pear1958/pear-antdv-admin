@@ -1,0 +1,2 @@
+import{K as o,r as n,o as r,e as s,a as u,w as c,b as p}from"./index-18b1401e.js";const i={__name:"page1",setup(_){const e=o(),t=()=>{e.push({path:"/systemManage/account/pageOuter",query:{name:"outer",number:77}})};return(m,l)=>{const a=n("a-button");return r(),s("div",null,[u(a,{onClick:t},{default:c(()=>[p("\u70B9\u51FB\u8DF3\u8F6C\u5230\u5B50\u9875\u9762Outer")]),_:1})])}}};export{i as default};
+//# sourceMappingURL=page1-ed7224ad.js.map
