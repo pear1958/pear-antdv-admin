@@ -7,7 +7,7 @@
     "dev": "vite",
     "build:dev": "vite build --mode development",
     "build:test": "vite build --mode test",
-    "build:pro": "rimraf dist && node --max-old-space-size=8192 vite build --mode production",
+    "build:pro": "vite build --mode production",
     "preview": "vite preview"
   },
   "dependencies": {
