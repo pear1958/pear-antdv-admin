@@ -78,7 +78,7 @@ export default defineConfig(({ mode }) => {
     },
     build: {
       // 关闭source-map 减小打包后的文件体积
-      sourcemap: true,
+      sourcemap: false,
       // 消除打包大小超过500kb警告
       chunkSizeWarningLimit: 4000,
       // esbuild 打包更快, 但是不能去除 console.log
