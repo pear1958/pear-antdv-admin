@@ -86,6 +86,11 @@ export const useSystemStore = defineStore({
       const delIndex = this.tabList.findIndex(item => item.fullPath === fullPath)
       this.tabList.splice(delIndex + 1)
     },
+    sortTabs(oldIndex, newIndex) {
+      const currentTab = this.tabList[oldIndex]
+      this.tabList.splice(oldIndex, 1)
+      this.tabList.splice(newIndex, 0, currentTab)
+    },
     setMainMaximize(value) {
       this.mainMaximize = value
     },

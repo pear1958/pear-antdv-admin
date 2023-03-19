@@ -92,6 +92,7 @@ import { message } from 'ant-design-vue'
 import { useSystemStore } from '@/store/modules/system'
 import emitter from '@/utils/mitt'
 import Maximize from './Maximize.vue'
+import { useTabsDrag } from './useTabs'
 
 const route = useRoute()
 const router = useRouter()
@@ -109,6 +110,8 @@ const sideBarWidth = computed(() => {
 const mainMaximize = computed(() => {
   return systemStore.mainMaximize
 })
+
+useTabsDrag()
 
 const removeTab = fullPath => {
   // 删除keepAlive
