@@ -74,7 +74,7 @@
             </a-menu>
           </template>
 
-          <div class="dropdown">
+          <div class="dropdown-tab">
             <span class="dropdownIcon">
               <svg-icon name="arrow-down" />
             </span>
@@ -233,14 +233,25 @@ const closeAllTab = tab => {
 </script>
 
 <style lang="less">
+.dropdown-tab {
+  align-items: center;
+  display: flex;
+  padding: 0 14px;
+  height: 28px;
+
+  .dropdownIcon {
+    .flex();
+    font-size: 17px;
+    cursor: pointer;
+  }
+}
+
 .dropdown-menu .anticon {
   margin-right: 3px;
 }
 
-.dropdownIcon {
-  .flex();
-  font-size: 17px;
-  cursor: pointer;
+.ant-tabs-tab:last-child {
+  margin-right: 11px !important;
 }
 </style>
 
@@ -255,7 +266,6 @@ const closeAllTab = tab => {
   background-color: #ffffff;
   box-shadow: 0 0 1px #888;
   z-index: 700;
-  padding-right: 15px;
   transition: all 0.2s;
 
   :deep(.ant-tabs) {
@@ -274,22 +284,17 @@ const closeAllTab = tab => {
       height: calc(@tabHeight - 2px);
       margin-bottom: 0;
 
+      &::before {
+        border-bottom: none;
+      }
+
       .ant-tabs-tab {
         padding-left: 12px;
         padding-right: 8px;
         height: calc(@tabHeight - 2px);
         line-height: calc(@tabHeight - 2px);
         background-color: #ffffff;
-        margin-right: 3px !important;
-
-        .anticon-close {
-          font-size: 12px;
-          margin-top: 8px;
-
-          svg {
-            width: 0.7em;
-          }
-        }
+        margin-right: 3px;
 
         // 没有选中的Tab
         // 默认都有关闭按钮, 默认都隐藏
@@ -301,6 +306,15 @@ const closeAllTab = tab => {
         &:hover {
           .ant-tabs-tab-remove {
             opacity: 1;
+          }
+        }
+
+        .anticon-close {
+          font-size: 12px;
+          margin-top: 8px;
+
+          svg {
+            width: 0.7em;
           }
         }
 
@@ -349,6 +363,8 @@ const closeAllTab = tab => {
 
       .ant-tabs-nav-more {
         padding: 3px 16px;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
       }
     }
   }
