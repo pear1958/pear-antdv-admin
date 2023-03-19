@@ -6,7 +6,7 @@ export async function useTabsDrag() {
   await nextTick()
 
   // 被拖动元素的父级元素
-  const el = document.querySelectorAll('.tabs-box .ant-tabs-nav-wrap > div')?.[0]
+  const el = document.querySelectorAll('.tabs-box .ant-tabs-nav-list')?.[0]
 
   if (!el) return
 

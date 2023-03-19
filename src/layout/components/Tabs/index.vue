@@ -140,7 +140,7 @@ const NAME_WHITE_LIST = ['403', '404', '500', 'login']
 // 监听路由的变化
 watch(
   () => router.currentRoute.value,
-  async curRoute => {
+  curRoute => {
     activeKey.value = curRoute.fullPath
 
     if (NAME_WHITE_LIST.includes(curRoute.name)) return
@@ -154,13 +154,6 @@ watch(
 
     // 添加keep-alive
     curRoute.meta.keepAlive !== false && systemStore.addKeepAliveName(curRoute.name)
-
-    await nextTick()
-
-    const nodeList = document.querySelectorAll('.tabs-box .ant-tabs-tab')
-    if (!nodeList) return
-    const lastTab = Array.from(nodeList).pop()
-    lastTab.style['margin-right'] = '11px'
   },
   {
     immediate: true
