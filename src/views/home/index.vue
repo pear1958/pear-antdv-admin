@@ -16,7 +16,7 @@ const option = reactive(options)
 
 // console.log('getConfig', getConfig())
 
-console.log('111-888-xxx', import.meta.env)
+// console.log('111-888-xxx', import.meta.env)
 </script>
 
 <style lang="less" scoped>

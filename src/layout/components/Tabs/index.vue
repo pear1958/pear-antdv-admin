@@ -239,9 +239,7 @@ const closeAllTab = tab => {
 
 .dropdownIcon {
   .flex();
-  color: red !important;
   font-size: 17px;
-  // border: 1px solid green;
   cursor: pointer;
 }
 </style>
@@ -250,7 +248,7 @@ const closeAllTab = tab => {
 .tabs-box {
   height: @tabHeight;
   top: @headerHeight;
-  .flex(flex-start, flex-end);
+  .flex(flex-start);
   box-sizing: border-box;
   position: fixed;
   right: 0;
@@ -273,25 +271,84 @@ const closeAllTab = tab => {
     }
 
     .ant-tabs-nav {
+      height: calc(@tabHeight - 2px);
       margin-bottom: 0;
-    }
 
-    .ant-tabs-tab {
-      padding: 6px 13px;
-    }
+      .ant-tabs-tab {
+        padding-left: 12px;
+        padding-right: 8px;
+        height: calc(@tabHeight - 2px);
+        line-height: calc(@tabHeight - 2px);
+        background-color: #ffffff;
+        margin-right: 3px !important;
 
-    // 没有选中的Tab
-    // 默认都有关闭按钮, 默认都隐藏
-    // close-icon
-    .ant-tabs-tab:not(.ant-tabs-tab-active) {
-      .anticon-close {
-        visibility: hidden;
+        .anticon-close {
+          font-size: 12px;
+          margin-top: 8px;
+
+          svg {
+            width: 0.7em;
+          }
+        }
+
+        // 没有选中的Tab
+        // 默认都有关闭按钮, 默认都隐藏
+        // close-icon
+        &:not(.ant-tabs-tab-active) {
+          border: 1px solid #d9d9d9;
+        }
+
+        &:hover {
+          .ant-tabs-tab-remove {
+            opacity: 1;
+          }
+        }
+
+        .ant-tabs-tab-remove {
+          width: 8px;
+          height: 28px;
+          margin-left: 2px;
+          margin-right: 3px;
+          font-size: 12px;
+          opacity: 0;
+          transition: none;
+          display: flex;
+          align-items: flex-start;
+
+          &:hover {
+            svg {
+              width: 0.9em !important;
+            }
+          }
+        }
+
+        &-active {
+          background-color: var(--primary-color) !important;
+          transition: none;
+          border: none;
+          border: 1px solid transparent !important;
+
+          span {
+            color: #ffffff !important;
+          }
+
+          .ant-tabs-tab-remove {
+            opacity: 1;
+          }
+
+          svg {
+            fill: #ffffff;
+            width: 0.8em !important;
+          }
+        }
       }
 
-      &:hover {
-        .anticon-close {
-          visibility: visible;
-        }
+      .ant-dropdown-trigger {
+        font-size: 12px;
+      }
+
+      .ant-tabs-nav-more {
+        padding: 3px 16px;
       }
     }
   }
