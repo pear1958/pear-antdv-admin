@@ -140,7 +140,7 @@ const NAME_WHITE_LIST = ['403', '404', '500', 'login']
 // 监听路由的变化
 watch(
   () => router.currentRoute.value,
-  curRoute => {
+  async curRoute => {
     activeKey.value = curRoute.fullPath
 
     if (NAME_WHITE_LIST.includes(curRoute.name)) return
@@ -154,6 +154,11 @@ watch(
 
     // 添加keep-alive
     curRoute.meta.keepAlive !== false && systemStore.addKeepAliveName(curRoute.name)
+
+    // 删除最后一个非 .ant-tabs-tab 元素, 否则 :last-child 选择器不生效
+    await nextTick()
+    const ele = document.querySelector('.tabs-box .ant-tabs-ink-bar')
+    ele && ele.parentNode.removeChild(ele)
   },
   {
     immediate: true
@@ -294,6 +299,10 @@ const closeAllTab = tab => {
         line-height: calc(@tabHeight - 2px);
         background-color: #ffffff;
         margin-right: 3px;
+
+        &:last-child {
+          margin-right: 11px;
+        }
 
         // 没有选中的Tab
         // 默认都有关闭按钮, 默认都隐藏
