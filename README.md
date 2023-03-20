@@ -81,6 +81,8 @@ pnpm run build:pro
 - [ ] husky and Lint 等代码规范
 - [ ] 大屏和gis Demo
 - [ ] drag Modal And SearchTable
+- [ ] 监控视频demo
+- [ ] 地图组件 & 视频组件
 
 #### 支持
 如果觉得本项目还不错或在工作中有所启发，请在Github帮助开发者点亮星星，这是对开发者最大的支持和鼓励！

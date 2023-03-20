@@ -1,12 +1,13 @@
 <template>
-  <div>
-    地图
-  </div>
+  <div>地图</div>
 </template>
 
-<script setup>
+<script>
+export default {
+  setup() {
+    return {}
+  }
+}
 </script>
 
-<style lang='scss' scoped>
-
-</style>
+<style lang="less" scoped></style>
