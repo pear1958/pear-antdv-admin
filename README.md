@@ -78,6 +78,7 @@ pnpm run build:pro
 - [x] Echarts组件
 - [x] 迁移websocket
 - [x] 优化Tab组件
+- [ ] 自定义Modal组件
 - [ ] husky and Lint 等代码规范
 - [ ] 大屏和gis Demo
 - [ ] drag Modal And SearchTable
