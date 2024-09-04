@@ -2,7 +2,7 @@
   <div :class="className" ref="chartRef"></div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { onBeforeUnmount, onMounted, ref, unref, watch } from 'vue'
 import * as echarts from 'echarts'
 

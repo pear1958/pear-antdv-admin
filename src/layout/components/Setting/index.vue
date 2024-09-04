@@ -15,7 +15,7 @@
   </a-drawer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { nextTick, ref, watch } from 'vue'
 import Pickr from '@simonwep/pickr'
 import '@simonwep/pickr/dist/themes/nano.min.css'

@@ -10,7 +10,7 @@
   </a-breadcrumb>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, unref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { usePermissionStore } from '@/store/modules/permission'

@@ -58,8 +58,8 @@
   </div>
 </template>
 
-<script setup>
-import { onMounted,ref, reactive, computed } from 'vue'
+<script setup lang="ts">
+import { onMounted, ref, reactive, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useUserStore } from '@/store/modules/user'
 import { useTheme } from '@/hooks/useTheme'
@@ -96,7 +96,7 @@ const rules = {
 }
 
 function handleLogin(loginForm) {
-  if (formState.username == 'Admin' && (formState.password == '123456') & (formState.code == 'phfp')) {
+  if (formState.username == 'Admin' && formState.password == '123456' && formState.code == 'phfp') {
     loading.value = true
 
     setTimeout(() => {

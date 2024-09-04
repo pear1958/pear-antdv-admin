@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
 import { useSystemStore } from '@/store/modules/system'
 
@@ -25,7 +25,7 @@ function toggleSidebar() {
 
 .trigger {
   transition: color 0.3s;
-  
+
   &:hover {
     color: var(--primary-color);
   }

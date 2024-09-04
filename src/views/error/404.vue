@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import noExist from '@/assets/imgs/404.svg'
 </script>
 

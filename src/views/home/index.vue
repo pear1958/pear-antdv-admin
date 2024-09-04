@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { reactive } from 'vue'
 import { getConfig } from '@/config'
 import charts from '@/components/Charts/index.vue'

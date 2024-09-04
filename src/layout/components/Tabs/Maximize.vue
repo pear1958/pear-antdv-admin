@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { watch } from 'vue'
 import { useSystemStore } from '@/store/modules/system'
 
@@ -12,8 +12,8 @@ const systemStore = useSystemStore()
 
 // method: 'add' | 'remove'
 function changeClass(method) {
-  const app = document.getElementById('app')
-  app.classList[method]('main-maximize')
+  const app = document.getElementById('app') as HTMLDivElement
+  ;(app.classList as any)[method]('main-maximize')
 }
 
 // 退出Main全屏

@@ -1,12 +1,7 @@
 <template>
-  <div>
-    PageOuter ( 点击面包屑和Tab 路由参数不会丢失 - 测试页面 )
-  </div>
+  <div>PageOuter ( 点击面包屑和Tab 路由参数不会丢失 - 测试页面 )</div>
 </template>
 
-<script setup>
-</script>
+<script setup lang="ts"></script>
 
-<style lang='less' scoped>
-
-</style>
+<style lang="less" scoped></style>

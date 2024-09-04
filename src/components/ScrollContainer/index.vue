@@ -4,7 +4,7 @@
   </Scrollbar>
 </template>
 
-<script>
+<script lang="ts">
 import { ref, unref, nextTick } from 'vue'
 import Scrollbar from './Scrollbar/index.vue'
 import { useScrollTo } from './useScrollTo'

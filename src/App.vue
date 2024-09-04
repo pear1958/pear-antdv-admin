@@ -6,7 +6,7 @@
   </a-config-provider>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, shallowRef } from 'vue'
 import zhCN from 'ant-design-vue/es/locale/zh_CN'
 import dayjs from 'dayjs'

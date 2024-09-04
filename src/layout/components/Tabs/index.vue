@@ -85,7 +85,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, computed, watch, unref, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { message } from 'ant-design-vue'
@@ -143,7 +143,7 @@ watch(
   async curRoute => {
     activeKey.value = curRoute.fullPath
 
-    if (NAME_WHITE_LIST.includes(curRoute.name)) return
+    if (NAME_WHITE_LIST.includes(curRoute.name as string)) return
 
     // 添加Tab
     systemStore.addTab({

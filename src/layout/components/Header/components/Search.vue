@@ -54,7 +54,7 @@
   </a-modal>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, shallowRef, unref, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import hotkeys from 'hotkeys-js'

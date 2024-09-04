@@ -44,7 +44,7 @@
   </a-layout>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, reactive, watch, unref } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useSystemStore } from '@/store/modules/system'
@@ -115,7 +115,7 @@ function handleClick({ key }) {
 
   // 外部链接
   if (clickRoute.meta.link) {
-    return window.open(clickRoute.meta.link, '_blank')
+    return window.open(clickRoute.meta.link as string, '_blank')
   }
 
   router.push(key)

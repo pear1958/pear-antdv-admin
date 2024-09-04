@@ -18,7 +18,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent, ref, onMounted, onBeforeUnmount, nextTick, provide, computed, unref } from 'vue'
 import { addResizeListener, removeResizeListener } from './event'
 import { toObject } from './util'
@@ -118,7 +118,7 @@ export default defineComponent({
       resize,
       update,
       handleScroll
-    }
+    } as any
   }
 })
 </script>

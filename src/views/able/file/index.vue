@@ -6,7 +6,7 @@
   </a-space>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import axios from 'axios'
 import { downloadByData } from '@/hooks/useDownload'
 import { downloadByOnlineUrl, downloadByUrl } from '@/utils/file'

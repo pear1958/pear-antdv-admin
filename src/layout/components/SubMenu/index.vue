@@ -8,7 +8,7 @@
       <span>{{ subItem.meta.title }}</span>
     </a-menu-item>
 
-    <a-sub-menu v-else :key="subItem.path">
+    <a-sub-menu v-else :key="(subItem.path as string)">
       <template #icon>
         <component :is="subItem.meta.icon" />
       </template>
@@ -20,12 +20,13 @@
   </template>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { PropType } from 'vue'
 import SubMenu from './index.vue'
 
 defineProps({
   menuList: {
-    type: Array,
+    type: Array as PropType<any>,
     default: () => []
   }
 })
