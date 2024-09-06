@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "16.x",
+    "pnpm": "8.x"
+  },
   "scripts": {
     "dev": "vite",
     "build:dev": "vue-tsc && vite build --mode development",
@@ -15,18 +19,18 @@
     "@ant-design/icons-vue": "^6.1.0",
     "@simonwep/pickr": "^1.8.2",
     "ant-design-vue": "^3.2.15",
-    "axios": "^1.2.1",
+    "axios": "^1.7.2",
     "dayjs": "^1.11.7",
     "echarts": "^5.4.1",
     "hotkeys-js": "^3.10.1",
     "mitt": "^3.0.0",
     "nprogress": "^0.2.0",
-    "pinia": "^2.0.33",
+    "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "3.1.0",
     "resize-observer-polyfill": "^1.5.1",
     "sortablejs": "^1.15.0",
-    "tailwindcss": "3.3.5",
-    "vue": "^3.2.41",
+    "tailwindcss": "3.4.9",
+    "vue": "^3.4.31",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
