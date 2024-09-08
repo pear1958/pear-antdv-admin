@@ -12,8 +12,6 @@ import '@/styles/index.less'
 // 一定要在main.ts中导入tailwind.css，防止vite每次hmr都会请求src/styles/index.scss整体css文件导致热更新慢的问题
 import '@/styles/tailwind.css'
 
-// 注册使用 svg icon
-// https://github.com/vbenjs/vite-plugin-svg-icons/blob/main/README.zh_CN.md
 import 'virtual:svg-icons-register'
 
 import { getSystemConfig } from '@/config'

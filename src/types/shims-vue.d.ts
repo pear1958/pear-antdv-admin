@@ -9,8 +9,3 @@ declare module '*.vue' {
 declare module 'nprogress'
 declare module 'hotkeys-js'
 declare module 'qs'
-
-declare module 'virtual:*' {
-  const result: any
-  export default result
-}
